@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavBar, Footer } from '../components';
+import { NavBar, Footer, Card } from '../components';
 import { Home, Exec, Blog } from '../layouts';
 import { Switch, Route } from 'react-router-dom';
-
 
 class App extends React.Component {
     render = () => (
@@ -21,7 +20,6 @@ class App extends React.Component {
                     </Route>
                 </Switch>
             </div>
-            <button type="button" className="btn btn-primary">Primary</button>
             <Footer/>
         </div>
     )
