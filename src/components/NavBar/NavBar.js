@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const navItems = {
-        home: '/',
-        exec: '/Exec'
+        Home: '/',
+        Exec: '/Exec'
     };
 
     const navigation = Object.entries(navItems).map(([key, value]) => (
