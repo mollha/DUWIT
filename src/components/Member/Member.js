@@ -3,35 +3,20 @@ import React from 'react';
 class Member extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            active: false
-        };
     }
 
-    toggleActive = () => {
-        const active = !this.state.active;
-        this.setState({active: active});
-    }
-
-    getMemberAvatar = () => {
-        if (this.state.active) {
-            return (
-                <img className="border border-pink card-img-top rounded-circle" src={this.props.src}
-                     alt="Card image cap" onClick={() => this.toggleActive()}/>
-            );
-        } else {
-            return (
-                <img className="card-img-top rounded-circle" src={this.props.src} alt="Card image cap"
-                     onClick={() => this.toggleActive()}/>
-            );
-        }
-    }
+    getMemberAvatar = () => (
+        <img className={`card-img-top rounded-circle ${this.props.member.active ? 'border border-pink' : ''}`}
+             src={`${process.env.PUBLIC_URL}/images/members/${this.props.member.src}`}
+             alt="Card image cap"
+             onClick={() => this.props.selectMember(this.props.member.id)}/>
+    );
 
     render() {
         return (
             <div className="memberCard">
                 {this.getMemberAvatar()}
-                <p className="text-center">{this.props.name}</p>
+                <p className="text-center">{this.props.member.name}</p>
             </div>
         )
     }

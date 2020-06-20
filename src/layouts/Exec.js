@@ -9,22 +9,36 @@ class Exec extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeMember: 0
+            members: members
         }
     }
 
-    getMembers = () => members.map(({id, name, src, role, year, description}, index) => (
+    getMembers = () => this.state.members.map((member, index) => (
         <div className="col-sm-2">
-            <Member name={name} role={role} year={year} src={`${process.env.PUBLIC_URL}/images/members/${src}`} description={description}/>
+            <Member member={member} selectMember={this.selectMember}/>
         </div>
     ));
 
-    getActiveMember = () => (
-        <div className="jumbotron">
-            const post = posts.find((post) => post.id.toString() === id);
-            <p></p>
-        </div>
-    );
+    selectMember = (id) => {
+        this.setState({
+            members: this.state.members.map(member => {
+                member['active'] = member.id.toString() === id.toString();
+                return member;
+            })
+        });
+    }
+
+    getActiveMember = () => {
+        const activeMember = this.state.members.find(({active}) => active);
+        return (
+            <div className='text-center'>
+                <h2>{activeMember.name}</h2>
+                <p>{activeMember.role}</p>
+                <p>Year {activeMember.year}</p>
+                <p>{activeMember.description}</p>
+            </div>
+        );
+    }
 
     render = () => (
         <div>
@@ -41,6 +55,9 @@ class Exec extends React.Component {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="jumbotron bg-secondary text-white">
+                { this.getActiveMember()}
             </div>
         </div>
     )
