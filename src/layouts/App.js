@@ -1,10 +1,7 @@
 import React from 'react';
-import NavBar from "../components/NavBar/NavBar";
-import Footer from "../components/Footer/Footer";
-import Home from '../layouts/Home';
-import Exec from '../layouts/Exec';
+import { NavBar, Footer, Card } from '../components';
+import { Home, Exec, Blog } from '../layouts';
 import { Switch, Route } from 'react-router-dom';
-
 
 class App extends React.Component {
     render = () => (
@@ -18,9 +15,11 @@ class App extends React.Component {
                     <Route exact path="/Exec">
                         <Exec />
                     </Route>
+                    <Route exact path="/Blog">
+                        <Blog />
+                    </Route>
                 </Switch>
             </div>
-            <button type="button" className="btn btn-primary">Primary</button>
             <Footer/>
         </div>
     )
