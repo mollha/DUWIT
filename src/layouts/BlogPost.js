@@ -9,11 +9,11 @@ const BlogPost = () => {
     const post = posts.find((post) => post.id.toString() === id);
 
     if (!post) {
-        return <Redirect to='/blog'  />
+        return <Redirect to='/blog'/>
     }
 
     return (
-        <div>
+        <div className="my-5">
             <h1>{post.title}</h1>
             <div>
                 {post.markdown}
