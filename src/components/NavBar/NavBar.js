@@ -6,8 +6,8 @@ const Navbar = () => {
 
     const navItems = {
         Home: '/',
-        Exec: '/Exec',
-        Blog: '/Blog'
+        Exec: '/exec',
+        Blog: '/blog'
     };
 
     const navigation = Object.entries(navItems).map(([key, value]) => (
