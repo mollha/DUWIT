@@ -6,6 +6,7 @@ export const members = [
         role: 'Mentoring Officer',
         year: '3',
         description: 'I have been the mentoring officer for a bit and blah blah blah',
+        active: true,
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const members = [
         role: 'President',
         year: '3',
         description: 'I have been the president for 2 years and blah blah blah...',
+        active: false,
     },
     {
         id: 3,
@@ -22,5 +24,6 @@ export const members = [
         role: 'President',
         year: '3',
         description: 'I have been the president for 2 years and blah blah blah...',
+        active: false,
     }
 ];
