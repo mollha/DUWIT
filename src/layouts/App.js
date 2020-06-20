@@ -1,10 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './styles/main.scss';
-import Navbar from "./components/NavBar/NavBar";
-
-//<Navbar molly={'smells'}/>
-
+import Navbar from "../components/NavBar/NavBar";
 
 class App extends React.Component {
     render() {
