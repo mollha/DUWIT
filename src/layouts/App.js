@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar, Footer, Card } from '../components';
+import { NavBar, Footer } from '../components';
 import { Home, Exec, Blog } from '../layouts';
 import { Switch, Route } from 'react-router-dom';
 

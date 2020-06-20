@@ -2,9 +2,9 @@ import React from 'react';
 
 
 const Carousel = () => {
-    const folder = "%PUBLIC_URL%/images/carousel/"
 
     const images = [
+        {src: 'carousel3.png', title: 'This is a title', description: 'This is a description, based on the title' },
         {src: 'carousel1.jpeg', title: 'This is a title', description: 'This is a description, based on the title' },
         {src: 'carousel2.jpeg', title: 'This is a title', description: 'This is a description, based on the title' }
     ];
