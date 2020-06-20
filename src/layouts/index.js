@@ -2,7 +2,7 @@ import Home from './Home';
 import Blog from './Blog';
 import Exec from './Exec';
 import BlogPost from './BlogPost';
-import Calendar from './Calendar';
+import EventsCalendar from './EventsCalendar';
 
 
 export {
@@ -10,5 +10,5 @@ export {
     Blog,
     Exec,
     BlogPost,
-    Calendar
+    EventsCalendar
 }

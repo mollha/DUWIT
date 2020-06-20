@@ -5,7 +5,7 @@ import {
     Exec, 
     Blog, 
     BlogPost, 
-    Calendar
+    EventsCalendar
 } from '../layouts';
 import { Switch, Route } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ class App extends React.Component {
                         <BlogPost />
                     </Route>
                     <Route exact path="/calendar">
-                        <Calendar />
+                        <EventsCalendar />
                     </Route>
                 </Switch>
             </div>
