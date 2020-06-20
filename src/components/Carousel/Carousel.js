@@ -28,7 +28,7 @@ const Carousel = () => {
     ));
 
     return (
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide rounded overflow-hidden" data-ride="carousel">
             <ol className="carousel-indicators">
                 {indicators}
             </ol>
