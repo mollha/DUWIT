@@ -1,7 +1,6 @@
 import React from 'react';
 import { members } from '../members';
 import { Member } from '../components';
-import { posts } from '../posts';
 
 // Class for Exec Page Layout
 
@@ -44,7 +43,7 @@ class Exec extends React.Component {
         <div>
             <div className="text-center">
                 <h1 className="my-4">
-                    Meet the Exec
+                    Meet the Executive Commitee
                 </h1>
             </div>
             <div className="jumbotron bg-l p-3">
