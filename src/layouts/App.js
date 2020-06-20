@@ -1,16 +1,29 @@
 import React from 'react';
-import Navbar from "../components/NavBar/NavBar";
+import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
+import Home from '../layouts/Home';
+import Exec from '../layouts/Exec';
+import { Switch, Route } from 'react-router-dom';
+
 
 class App extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <Navbar />
-                <h1>Hello World!</h1>
-                <button type="button" className="btn btn-primary">Primary</button>
+    render = () => (
+        <div>
+            <NavBar/>
+            <div className="container">
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/Exec">
+                        <Exec />
+                    </Route>
+                </Switch>
             </div>
-        );
-    }
+            <button type="button" className="btn btn-primary">Primary</button>
+            <Footer/>
+        </div>
+    )
 }
 
 export default App;
