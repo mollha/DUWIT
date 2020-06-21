@@ -1,6 +1,12 @@
 import React from 'react';
 import { NavBar, Footer } from '../components';
-import { Home, Exec, Blog, BlogPost } from '../layouts';
+import { 
+    Home, 
+    Exec, 
+    Blog, 
+    BlogPost, 
+    EventsCalendar
+} from '../layouts';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends React.Component {
@@ -20,6 +26,9 @@ class App extends React.Component {
                     </Route>
                     <Route exact path="/blog/:id">
                         <BlogPost />
+                    </Route>
+                    <Route exact path="/calendar">
+                        <EventsCalendar />
                     </Route>
                 </Switch>
             </div>
