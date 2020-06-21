@@ -20,10 +20,12 @@ export const members = [
     {
         id: 3,
         name: 'Amy Hudspith',
-        src: 'avatar3.jpg',
+        src: 'amy.png',
         role: 'President',
         year: '3',
         description: 'I have been the president for 2 years and blah blah blah...',
         active: false,
     }
+
 ];
+
