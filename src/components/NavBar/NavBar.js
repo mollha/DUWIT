@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const navbarBrandImg = `${process.env.PUBLIC_URL}/navbar_brand.jpg`
 
     const navItems = {
         Home: '/',
@@ -27,7 +28,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <a className="navbar-brand" href="#">DU-WIT</a>
+      
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
