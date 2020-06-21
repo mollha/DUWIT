@@ -13,7 +13,7 @@ class App extends React.Component {
     render = () => (
         <div>
             <NavBar/>
-            <div className="container py-2">
+            <div className="container py-5">
                 <Switch>
                     <Route exact path="/">
                         <Home />
