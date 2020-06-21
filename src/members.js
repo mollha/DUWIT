@@ -26,4 +26,6 @@ export const members = [
         description: 'I have been the president for 2 years and blah blah blah...',
         active: false,
     }
+
 ];
+
